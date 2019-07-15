@@ -74,8 +74,8 @@ html, body {
   bottom: 0px;
   left: 690px;
   right: 0px;
-  height: 100px;
-   width: 100px;
+  height: 75px;
+   width: 75px;
    z-index: 0;
    background-size: contain;
   background-position: center;
@@ -89,7 +89,7 @@ background-repeat: no-repeat;
   left: 700px;
   right: 0px;
   width: 70px;
-  height:  110px;
+  height:  70px;
 
   background-image: url(https://imgur.com/Kp4xcNp.png);
   z-index: 0;

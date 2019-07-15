@@ -4,6 +4,18 @@ const fireballs = {};
 // let player;
 // const spikes = {};
 
+let timerVar = setInterval(countTimer, 1000);
+let totalSeconds = 0;
+function countTimer() {
+   ++totalSeconds;
+   let hour = Math.floor(totalSeconds /3600);
+   let minute = Math.floor((totalSeconds - hour*3600)/60);
+   let seconds = totalSeconds - (hour*3600 + minute*60);
+
+   document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
+}
+
+
 
 const droppingFire = (x, y) => {
   if (x < 0 || x > 30*45) {
