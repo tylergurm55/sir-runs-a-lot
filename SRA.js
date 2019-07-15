@@ -1,3 +1,6 @@
+
+
+
 const sir = { x: 18*40, y: 520, width: 100, height: 100 };
 const fireballSize = { width: 75, height: 75 };
 const fireballs = {};
@@ -16,6 +19,37 @@ function countTimer() {
 }
 
 
+function collisionDetecion() {
+    Object.keys(fireballs).forEach(key => {
+        const fireball = fireballs[key];
+        const fireballx = fireball.x;
+        const fireballx2 = fireballx + fireballSize.width;
+        const firebally = fireball.y;
+        const firebally2 = firebally + fireballSize.height;
+        const playerx = sir.x;
+        const playerx2 = playerx + sir.width;
+        const playery = sir.y;
+        const playery2 = playery + sir.height;
+        if ((fireballx <= playerx && fireballx2 >= playerx) 
+        
+        || (fireballx <= playerx2 && fireballx2 >= playerx2)
+            || (playerx <= fireballx && playerx2 >= fireballx2)) {
+            if ((firebally <= playery && firebally2 >= playery) 
+                || (firebally <= playery2 && firebally2 >= playery2)
+                || (playery <= firebally && playery2 >= firebally2)) {
+                 babyleft.style.backgroundImage= ("URL('/Users/tylergurman/ga/unit1/hw/sir-runs-a-lot/explosion.jpeg')");
+                  
+                              
+                  return true;
+                    
+            }
+        }
+    });
+
+    return false;
+    
+}
+
 
 const droppingFire = (x, y) => {
   if (x < 0 || x > 30*45) {
@@ -33,7 +67,7 @@ const onScreen = (x, y) => {
 };
 
 function moveSir() {
-  const sirMove = document.querySelector('.baby');
+  const sirMove = document.querySelector('.babyleft');
   sirMove.style.top = `${sir.y}px`;
   sirMove.style.left = `${(sir.x).toString()}px`;
 //   sirMove.style.top = `${(sir.y * 0).toString()}px`;
@@ -97,7 +131,9 @@ window.addEventListener('keydown', (evt) => {
           fireballs.one.y += 1;
           fireball.style.top = `${fireballs.one.y}px`;
         }
-        
+        if(collisionDetecion()) {
+          sir.style.backgroundImage = ("('https://imgur.com/VHldALP.jpeg')");
+        }
       },
       // 1,
     );
@@ -128,6 +164,9 @@ const fire2 = () => {
           fireballs.two.y += 1
           fireball.style.top = `${fireballs.two.y}px`;
         }
+        if(collisionDetecion()){
+          sir.style.backgroundImage = ("('https://imgur.com/VHldALP.jpeg')");
+        }
     },
       // 1,
     );
@@ -156,6 +195,9 @@ const fire3 = () => {
         } else {
           fireballs.three.y += 1;
           fireball.style.top = `${fireballs.three.y}px`;
+        }
+        if (collisionDetecion()){
+          sir.style.backgroundImage = ("('https://imgur.com/VHldALP.jpeg')");
         }
       },
       // 1,
@@ -187,6 +229,9 @@ const fire4 = () => {
         fireballs.four.y += 1;
         fireball.style.top = `${fireballs.four.y}px`;
       }
+      if(collisionDetecion()) {
+          
+      }
     },
     // 1,
   );
@@ -215,6 +260,9 @@ const fire5 = () => {
       } else {
         fireballs.five.y += 1;
         fireball.style.top = `${fireballs.five.y}px`;
+      }
+      if(collisionDetecion()) {
+          
       }
     },
     // 1,
@@ -245,6 +293,9 @@ const fire6 = () => {
         fireballs.six.y += 1;
         fireball.style.top = `${fireballs.six.y}px`;
       }
+      if(collisionDetecion()) {
+          
+      }
     },
     // 1,
   );
@@ -273,6 +324,9 @@ const fire7 = () => {
       } else {
         fireballs.seven.y += 1;
         fireball.style.top = `${fireballs.seven.y}px`;
+      }
+      if(collisionDetecion()) {
+          
       }
     },
     // 1,
@@ -303,6 +357,9 @@ const fire8 = () => {
         fireballs.eight.y += 1;
         fireball.style.top = `${fireballs.eight.y}px`;
       }
+      if(collisionDetecion()) {
+          
+      }
     },
     // 1,
   );
@@ -331,6 +388,9 @@ const fire9 = () => {
       } else {
         fireballs.nine.y += 1;
         fireball.style.top = `${fireballs.nine.y}px`;
+      }
+      if(collisionDetecion()) {
+          
       }
     },
     // 1,
@@ -361,6 +421,12 @@ const fire10 = () => {
         fireballs.ten.y += 1;
         fireball.style.top = `${fireballs.ten.y}px`;
       }
+      if(collisionDetecion()) {
+        let startover = true;
+        startover = confirm(
+          "Do you want to play Again?"
+          )
+      }
     },
     // 1,
   );
@@ -390,6 +456,12 @@ const fire11 = () => {
         fireballs.ele.y += 1;
         fireball.style.top = `${fireballs.ele.y}px`;
       }
+      if(collisionDetecion()) {
+        let startover = true;
+        startover = confirm(
+          "Do you want to play Again?"
+          )
+      }
     },
     // 1,
   );
@@ -418,6 +490,12 @@ const fire12 = () => {
       } else {
         fireballs.twe.y += 1;
         fireball.style.top = `${fireballs.twe.y}px`;
+      }
+      if(collisionDetecion()) {
+        let startover = true;
+        startover = confirm(
+          "Do you want to play Again?"
+          )
       }
     },
     1,
@@ -450,6 +528,12 @@ const fire13 = () => {
         fireballs.thir.y += 1;
         fireball.style.top = `${fireballs.thir.y}px`;
       }
+      if(collisionDetecion()) {
+        let startover = true;
+        startover = confirm(
+          "Do you want to play Again?"
+          )
+      }
     },
     1,
   );
@@ -478,6 +562,12 @@ const fire14 = () => {
       } else {
         fireballs.fourt.y += 1;
         fireball.style.top = `${fireballs.fourt.y}px`;
+      }
+      if(collisionDetecion()) {
+        let startover = true;
+        startover = confirm(
+          "Do you want to play Again?"
+          )
       }
     },
     1,
@@ -508,6 +598,12 @@ const fire15 = () => {
         fireballs.fift.y += 1;
         fireball.style.top = `${fireballs.fift.y}px`;
       }
+      if(collisionDetecion()) {let startover = true;
+        startover = confirm(
+          "Do you want to play Again?"
+          )
+          
+      }
     },
     1,
   );
@@ -536,6 +632,12 @@ const fire16 = () => {
       } else {
         fireballs.sixt.y += 1;
         fireball.style.top = `${fireballs.sixt.y}px`;
+      }
+      if(collisionDetecion()) {let startover = true;
+        startover = confirm(
+          "Do you want to play Again?"
+          )
+          
       }
     },
     1,
@@ -566,6 +668,12 @@ const fire17 = () => {
         fireballs.sevt.y += 1;
         fireball.style.top = `${fireballs.sevt.y}px`;
       }
+      if(collisionDetecion()) {let startover = true;
+        startover = confirm(
+          "Do you want to play Again?"
+          )
+          
+      }
     },
     1,
   );
@@ -595,9 +703,16 @@ const fire18 = () => {
         fireballs.ate.y += 1;
         fireball.style.top = `${fireballs.ate.y}px`;
       }
+      if(collisionDetecion()) {let startover = true;
+        startover = confirm(
+          "Do you want to play Again?"
+          )
+          
+      }
     },
     1,
   );
   
 }
 setInterval(fire18,2000);
+
