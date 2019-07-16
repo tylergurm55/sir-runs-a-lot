@@ -1,4 +1,4 @@
-# sir-runs-a-lot
+# SIR-RUNS-ALOT
 **Welcome to sir runs's world.**
 ## Out of nowhere giant fireballs have started falling from the sky.
 Help Sir runs's dodge the dangerous fireballs for as long as you can!!
