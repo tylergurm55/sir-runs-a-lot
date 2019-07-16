@@ -1,0 +1,30 @@
+{
+  "name": "sir-runs-a-lot",
+  "version": "1.0.0",
+  "description": "Sir Runs A-lot",
+  "main": "SRA.js",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "fix-all": "eslint --fix ." 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylergurm55/sir-runs-a-lot.git"
+  },
+  "keywords": [
+    "Sir",
+    "Runs",
+    "A-lot"
+  ],
+  "author": "Tyler Gurman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tylergurm55/sir-runs-a-lot/issues"
+  },
+  "homepage": "https://github.com/tylergurm55/sir-runs-a-lot#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0"
+  }
+}

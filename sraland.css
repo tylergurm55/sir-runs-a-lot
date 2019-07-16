@@ -1,0 +1,113 @@
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  html, body{
+      background-image: url('https://imgur.com/rk3SD8W.png');
+      margin: 0;
+  background-attachment: fixed;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+    }
+
+    body {
+        /* display: flex; */
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+        background-size: 100%;
+        font-size: 90px;
+    }
+
+    .fireball{
+        position: absolute;
+        top: 200px;
+        bottom: 100px;
+        left: 700px;
+        right: 0px;
+        width: 75px;
+        height:  75px;
+      
+        background-image: url(https://imgur.com/GAaffyL.png);
+        z-index: 0;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      @keyframes new{
+        0% {
+            color: #A27994;
+        }
+        20%{
+            color:rgb(216, 16, 52);
+        }
+        40% {
+            color: rgb(13, 63, 129);
+        }
+        60%{
+            color:rgb(113, 115, 255);
+        }
+        80%{
+            color: #F9F871;
+        }
+        100% {
+            color: rgb(187, 231, 28);
+        }
+    }
+ h1{
+    font-size: 80px;
+    flex-shrink: 2;
+    align-self: center;
+    animation-name: new;
+    animation-duration: 5s;
+    color:rgb(199, 22, 9);
+    animation: new 3s linear infinite;
+}
+
+    @keyframes new1{
+        0% {
+            color: rgb(218, 7, 148);
+        }
+        20%{
+            color:rgb(216, 16, 52);
+        }
+        40% {
+            color: rgb(109, 13, 109);
+        }
+        60%{
+            color:rgb(113, 115, 255);
+        }
+        80%{
+            color: rgb(113, 249, 147);
+        }
+        100% {
+            color: rgb(12, 147, 57);
+        }
+    }
+    
+    .button{
+        font-size: 40px;
+        flex-shrink: 2;
+        align-self: center;
+        animation-name: new1;
+        animation-duration: 5s;
+        color:rgb(228, 21, 6);
+        animation: new1 3s linear infinite;
+    }
+    
+    

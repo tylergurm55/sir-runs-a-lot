@@ -1,0 +1,120 @@
+html, body {
+  background-color: #131212;
+  margin: 0;
+  background-attachment: fixed;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+}
+
+.sir {
+  
+  display: flex;
+  justify-content:center;
+}
+.sir > div:nth-child(1) {
+  background-color: #b10f0f;	
+}
+.sir > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+  
+}
+.container{
+  display: flex;
+  justify-content:center;
+  
+  
+}
+
+.container1{
+  display: flex;
+  justify-content:center;
+  }
+
+  .container2{
+    display: flex;
+    justify-content:center;
+    }
+
+.container > div{
+  color: #ffeead;
+}
+.timer{
+  display: flex
+}
+#timer{
+    background-color: #be0d0d;
+    justify-content: flex-end;
+    font-size: 2em;
+    
+  }
+
+
+.backgroundImage {
+  display: flex;
+  justify-content: center
+}
+
+.gameboard {
+  background-image: url('https://imgur.com/rk3SD8W.png');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 175%; 
+  top: 1px;
+   display: flex;
+}
+
+.babyleft {
+  display: flex;
+  position: absolute;
+  opacity:1;
+  transition: all 0.3s;
+  background-image: url('https://imgur.com/FVGzSfD.png');
+  top: 69%;
+  /* bottom: 400px; */
+  left: 50%;
+  /* right: 0px; */
+  height: 90px;
+   width: 30px;
+   z-index: 0;
+   background-size: 100% 100%;
+  background-position: center;
+background-repeat: no-repeat;
+transform: scaleX(-1);
+
+}
+
+
+
+.fireball{
+  position: absolute;
+  top: 200px;
+  bottom: 100px;
+  left: 700px;
+  right: 0px;
+  width: 35px;
+  height:  50px;
+
+  background-image: url(https://imgur.com/GAaffyL.png);
+  z-index: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.newImage{
+  background-image: url(https://imgur.com/VHldALP.jpeg);
+}
