@@ -1,11 +1,10 @@
 
 
 
-const sir = { x: 18*40, y: 520, width: 100, height: 100 };
-const fireballSize = { width: 75, height: 75 };
+const sir = { x: 18*40, y: 470, width: 100, height: 100 };
+const fireballSize = { width: 50, height: 50 };
 const fireballs = {};
-// let player;
-// const spikes = {};
+
 
 let timerVar = setInterval(countTimer, 1000);
 let totalSeconds = 0;
@@ -37,9 +36,13 @@ function collisionDetecion() {
             if ((firebally <= playery && firebally2 >= playery) 
                 || (firebally <= playery2 && firebally2 >= playery2)
                 || (playery <= firebally && playery2 >= firebally2)) {
-                 babyleft.style.backgroundImage= ("URL('/Users/tylergurman/ga/unit1/hw/sir-runs-a-lot/explosion.jpeg')");
+                 
+                 
                   
-                              
+                  document.querySelector('.babyleft').style.backgroundImage = "url('explosion.jpeg')";
+                  window.setInterval(()=>{
+                  window.location.replace('srahtml.html');
+                  },1000);    
                   return true;
                     
             }
@@ -70,7 +73,6 @@ function moveSir() {
   const sirMove = document.querySelector('.babyleft');
   sirMove.style.top = `${sir.y}px`;
   sirMove.style.left = `${(sir.x).toString()}px`;
-//   sirMove.style.top = `${(sir.y * 0).toString()}px`;
 }
 
 function moveLeft() {
@@ -85,11 +87,6 @@ function moveRight() {
     moveSir(sir.x, sir.y);
   }
 }
-
-
-
-
-
 
 
 
@@ -118,8 +115,8 @@ window.addEventListener('keydown', (evt) => {
     fireballs.one = {
         x,
         y: 0,
-        width: 75,
-        height: 75,
+        width: 50,
+        height: 50,
     };
   
     const fireballInterval = setInterval(
@@ -131,11 +128,8 @@ window.addEventListener('keydown', (evt) => {
           fireballs.one.y += 1;
           fireball.style.top = `${fireballs.one.y}px`;
         }
-        if(collisionDetecion()) {
-          sir.style.backgroundImage = ("('https://imgur.com/VHldALP.jpeg')");
-        }
       },
-      // 1,
+      1,
     );
     
 }
@@ -151,8 +145,8 @@ const fire2 = () => {
     fireballs.two = {
         x,
         y: 0,
-        width: 75,
-        height: 75,
+        width: 50,
+        height: 50,
     };
   
      const fireballInterval = setInterval(
@@ -164,11 +158,8 @@ const fire2 = () => {
           fireballs.two.y += 1
           fireball.style.top = `${fireballs.two.y}px`;
         }
-        if(collisionDetecion()){
-          sir.style.backgroundImage = ("('https://imgur.com/VHldALP.jpeg')");
-        }
     },
-      // 1,
+      1,
     );
     
 }
@@ -183,8 +174,8 @@ const fire3 = () => {
     fireballs.three = {
         x,
         y: 0,
-        width: 75,
-        height: 75,
+        width: 50,
+        height: 50,
     };
   
     const fireballInterval = setInterval(
@@ -196,11 +187,9 @@ const fire3 = () => {
           fireballs.three.y += 1;
           fireball.style.top = `${fireballs.three.y}px`;
         }
-        if (collisionDetecion()){
-          sir.style.backgroundImage = ("('https://imgur.com/VHldALP.jpeg')");
-        }
+       
       },
-      // 1,
+      1,
     );
     
 }
@@ -216,8 +205,8 @@ const fire4 = () => {
   fireballs.four = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -233,7 +222,7 @@ const fire4 = () => {
           
       }
     },
-    // 1,
+    1,
   );
   
 }
@@ -248,8 +237,8 @@ const fire5 = () => {
   fireballs.five = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -261,11 +250,8 @@ const fire5 = () => {
         fireballs.five.y += 1;
         fireball.style.top = `${fireballs.five.y}px`;
       }
-      if(collisionDetecion()) {
-          
-      }
     },
-    // 1,
+    1,
   );
   
 }
@@ -280,8 +266,8 @@ const fire6 = () => {
   fireballs.six = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -293,11 +279,9 @@ const fire6 = () => {
         fireballs.six.y += 1;
         fireball.style.top = `${fireballs.six.y}px`;
       }
-      if(collisionDetecion()) {
-          
-      }
+      
     },
-    // 1,
+    1,
   );
   
 }
@@ -312,8 +296,8 @@ const fire7 = () => {
   fireballs.seven = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -344,8 +328,8 @@ const fire8 = () => {
   fireballs.eight = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -357,11 +341,8 @@ const fire8 = () => {
         fireballs.eight.y += 1;
         fireball.style.top = `${fireballs.eight.y}px`;
       }
-      if(collisionDetecion()) {
-          
-      }
     },
-    // 1,
+    1,
   );
   
 }
@@ -376,8 +357,8 @@ const fire9 = () => {
   fireballs.nine = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -389,11 +370,7 @@ const fire9 = () => {
         fireballs.nine.y += 1;
         fireball.style.top = `${fireballs.nine.y}px`;
       }
-      if(collisionDetecion()) {
-          
-      }
     },
-    // 1,
   );
   
 }
@@ -408,8 +385,8 @@ const fire10 = () => {
   fireballs.ten = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -428,7 +405,6 @@ const fire10 = () => {
           )
       }
     },
-    // 1,
   );
   
 }
@@ -443,8 +419,8 @@ const fire11 = () => {
   fireballs.ele = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -456,14 +432,8 @@ const fire11 = () => {
         fireballs.ele.y += 1;
         fireball.style.top = `${fireballs.ele.y}px`;
       }
-      if(collisionDetecion()) {
-        let startover = true;
-        startover = confirm(
-          "Do you want to play Again?"
-          )
-      }
     },
-    // 1,
+    1,
   );
   
 }
@@ -478,8 +448,8 @@ const fire12 = () => {
   fireballs.twe = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -490,12 +460,6 @@ const fire12 = () => {
       } else {
         fireballs.twe.y += 1;
         fireball.style.top = `${fireballs.twe.y}px`;
-      }
-      if(collisionDetecion()) {
-        let startover = true;
-        startover = confirm(
-          "Do you want to play Again?"
-          )
       }
     },
     1,
@@ -515,8 +479,8 @@ const fire13 = () => {
   fireballs.thir = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -527,12 +491,6 @@ const fire13 = () => {
       } else {
         fireballs.thir.y += 1;
         fireball.style.top = `${fireballs.thir.y}px`;
-      }
-      if(collisionDetecion()) {
-        let startover = true;
-        startover = confirm(
-          "Do you want to play Again?"
-          )
       }
     },
     1,
@@ -550,8 +508,8 @@ const fire14 = () => {
   fireballs.fourt = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 50,
+      height: 50,
   };
 
   const fireballInterval = setInterval(
@@ -562,12 +520,6 @@ const fire14 = () => {
       } else {
         fireballs.fourt.y += 1;
         fireball.style.top = `${fireballs.fourt.y}px`;
-      }
-      if(collisionDetecion()) {
-        let startover = true;
-        startover = confirm(
-          "Do you want to play Again?"
-          )
       }
     },
     1,
@@ -598,12 +550,7 @@ const fire15 = () => {
         fireballs.fift.y += 1;
         fireball.style.top = `${fireballs.fift.y}px`;
       }
-      if(collisionDetecion()) {let startover = true;
-        startover = confirm(
-          "Do you want to play Again?"
-          )
-          
-      }
+     
     },
     1,
   );
@@ -633,86 +580,11 @@ const fire16 = () => {
         fireballs.sixt.y += 1;
         fireball.style.top = `${fireballs.sixt.y}px`;
       }
-      if(collisionDetecion()) {let startover = true;
-        startover = confirm(
-          "Do you want to play Again?"
-          )
-          
-      }
+     
     },
     1,
   );
   
 }
 setInterval(fire16,4200);
-
-const fire17 = () => {
-  const fireball = document.createElement('div');
-  fireball.classList.add('fireball');
-  const x = Math.random() * 1400;
-  fireball.style.left = `${x}px`;
-  document.querySelector('.gameboard').appendChild(fireball);
-  fireballs.sevt = {
-      x,
-      y: 0,
-      width: 75,
-      height: 75,
-  };
-
-  const fireballInterval = setInterval(
-    () => {
-      if (fireballs.sevt.y === 625) {
-        fireball.remove();
-        clearInterval(fireballInterval);
-      } else {
-        fireballs.sevt.y += 1;
-        fireball.style.top = `${fireballs.sevt.y}px`;
-      }
-      if(collisionDetecion()) {let startover = true;
-        startover = confirm(
-          "Do you want to play Again?"
-          )
-          
-      }
-    },
-    1,
-  );
-  
-}
-setInterval(fire17,4000);
-
-const fire18 = () => {
-  const fireball = document.createElement('div');
-  fireball.classList.add('fireball');
-  const x = Math.random() * 1400;
-  fireball.style.left = `${x}px`;
-  document.querySelector('.gameboard').appendChild(fireball);
-  fireballs.ate = {
-      x,
-      y: 0,
-      width: 75,
-      height: 75,
-  };
-
-  const fireballInterval = setInterval(
-    () => {
-      if (fireballs.ate.y === 625) {
-        fireball.remove();
-        clearInterval(fireballInterval);
-      } else {
-        fireballs.ate.y += 1;
-        fireball.style.top = `${fireballs.ate.y}px`;
-      }
-      if(collisionDetecion()) {let startover = true;
-        startover = confirm(
-          "Do you want to play Again?"
-          )
-          
-      }
-    },
-    1,
-  );
-  
-}
-setInterval(fire18,2000);
 

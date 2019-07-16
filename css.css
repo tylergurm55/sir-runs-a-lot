@@ -1,0 +1,50 @@
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  html, body{
+      background-image: url('https://imgur.com/rk3SD8W.png');
+      margin: 0;
+  background-attachment: fixed;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+    }
+
+    body {
+        /* display: flex; */
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+        background-size: 100%;
+        font-size: 50px;
+    }
+
+    .fireball{
+        position: absolute;
+        top: 200px;
+        bottom: 100px;
+        left: 700px;
+        right: 0px;
+        width: 20px;
+        height:  50px;
+      
+        background-image: url(https://imgur.com/GAaffyL.png);
+        z-index: 0;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
