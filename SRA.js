@@ -1,10 +1,9 @@
 
-
-
-const sir = { x: 18*40, y: 470, width: 100, height: 100 };
+const sir = { x: 18*40, y: 505, width: 50, height: 50 };
 const fireballSize = { width: 50, height: 50 };
 const fireballs = {};
-
+const soundtrack = new Audio('soundtrack.mp3');
+soundtrack.play();
 
 let timerVar = setInterval(countTimer, 1000);
 let totalSeconds = 0;
@@ -115,8 +114,8 @@ window.addEventListener('keydown', (evt) => {
     fireballs.one = {
         x,
         y: 0,
-        width: 50,
-        height: 50,
+        width: 10,
+        height: 10,
     };
   
     const fireballInterval = setInterval(
@@ -145,8 +144,8 @@ const fire2 = () => {
     fireballs.two = {
         x,
         y: 0,
-        width: 50,
-        height: 50,
+        width: 10,
+        height: 10,
     };
   
      const fireballInterval = setInterval(
@@ -174,8 +173,8 @@ const fire3 = () => {
     fireballs.three = {
         x,
         y: 0,
-        width: 50,
-        height: 50,
+        width: 10,
+        height: 10,
     };
   
     const fireballInterval = setInterval(
@@ -205,8 +204,8 @@ const fire4 = () => {
   fireballs.four = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -237,8 +236,8 @@ const fire5 = () => {
   fireballs.five = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -266,8 +265,8 @@ const fire6 = () => {
   fireballs.six = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -296,8 +295,8 @@ const fire7 = () => {
   fireballs.seven = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -328,8 +327,8 @@ const fire8 = () => {
   fireballs.eight = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -357,8 +356,8 @@ const fire9 = () => {
   fireballs.nine = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -385,8 +384,8 @@ const fire10 = () => {
   fireballs.ten = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -419,8 +418,8 @@ const fire11 = () => {
   fireballs.ele = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -448,8 +447,8 @@ const fire12 = () => {
   fireballs.twe = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -479,8 +478,8 @@ const fire13 = () => {
   fireballs.thir = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -508,8 +507,8 @@ const fire14 = () => {
   fireballs.fourt = {
       x,
       y: 0,
-      width: 50,
-      height: 50,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -537,8 +536,8 @@ const fire15 = () => {
   fireballs.fift = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
@@ -567,8 +566,8 @@ const fire16 = () => {
   fireballs.sixt = {
       x,
       y: 0,
-      width: 75,
-      height: 75,
+      width: 10,
+      height: 10,
   };
 
   const fireballInterval = setInterval(
