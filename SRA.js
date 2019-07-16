@@ -41,7 +41,7 @@ function collisionDetecion() {
                   document.querySelector('.babyleft').style.backgroundImage = "url('explosion.jpeg')";
                   window.setInterval(()=>{
                   window.location.replace('srahtml.html');
-                  },1000);    
+                  },2000);    
                   return true;
                     
             }
@@ -132,7 +132,7 @@ window.addEventListener('keydown', (evt) => {
     );
     
 }
-setInterval(fire1,4250);
+setInterval(fire1,3000);
 
 
 const fire2 = () => {
@@ -154,7 +154,7 @@ const fire2 = () => {
           fireball.remove();
           clearInterval(fireballInterval);
         } else {
-          fireballs.two.y += 1
+          fireballs.two.y += 1;
           fireball.style.top = `${fireballs.two.y}px`;
         }
     },
@@ -162,7 +162,7 @@ const fire2 = () => {
     );
     
 }
-setInterval(fire2,1700);
+setInterval(fire2,1500);
 
 const fire3 = () => {
     const fireball = document.createElement('div');
@@ -192,7 +192,7 @@ const fire3 = () => {
     );
     
 }
-setInterval(fire3,3300);
+setInterval(fire3,2300);
 
 
 const fire4 = () => {
@@ -225,7 +225,7 @@ const fire4 = () => {
   );
   
 }
-setInterval(fire4,4750);
+setInterval(fire4,2800);
 
 const fire5 = () => {
   const fireball = document.createElement('div');
@@ -254,7 +254,7 @@ const fire5 = () => {
   );
   
 }
-setInterval(fire5,4250);
+setInterval(fire5,3150);
 
 const fire6 = () => {
   const fireball = document.createElement('div');
@@ -284,7 +284,7 @@ const fire6 = () => {
   );
   
 }
-setInterval(fire6,1800);
+setInterval(fire6,4500);
 
 const fire7 = () => {
   const fireball = document.createElement('div');
@@ -316,7 +316,7 @@ const fire7 = () => {
   );
   
 }
-setInterval(fire7,3789);
+setInterval(fire7,2200);
 
 const fire8 = () => {
   const fireball = document.createElement('div');
@@ -345,7 +345,7 @@ const fire8 = () => {
   );
   
 }
-setInterval(fire8,2500);
+setInterval(fire8,1200);
 
 const fire9 = () => {
   const fireball = document.createElement('div');
@@ -373,7 +373,7 @@ const fire9 = () => {
   );
   
 }
-setInterval(fire9,5000);
+setInterval(fire9,3500);
 
 const fire10 = () => {
   const fireball = document.createElement('div');
@@ -407,7 +407,7 @@ const fire10 = () => {
   );
   
 }
-setInterval(fire10,4550);
+setInterval(fire10,3000);
 
 const fire11 = () => {
   const fireball = document.createElement('div');
@@ -436,7 +436,7 @@ const fire11 = () => {
   );
   
 }
-setInterval(fire11,4750);
+setInterval(fire11,2600);
 
 const fire12 = () => {
   const fireball = document.createElement('div');
@@ -465,7 +465,7 @@ const fire12 = () => {
   );
   
 }
-setInterval(fire12,4100);
+setInterval(fire12,2900);
 
 
   
@@ -496,7 +496,7 @@ const fire13 = () => {
   );
   
 }
-setInterval(fire13,5000);
+setInterval(fire13,3700);
 
 const fire14 = () => {
   const fireball = document.createElement('div');
@@ -525,7 +525,7 @@ const fire14 = () => {
   );
   
 }
-setInterval(fire14,5000);
+setInterval(fire14,3800);
 
 const fire15 = () => {
   const fireball = document.createElement('div');
@@ -555,7 +555,7 @@ const fire15 = () => {
   );
   
 }
-setInterval(fire15,5200);
+setInterval(fire15,4000);
 
 const fire16 = () => {
   const fireball = document.createElement('div');
@@ -585,5 +585,5 @@ const fire16 = () => {
   );
   
 }
-setInterval(fire16,4200);
+setInterval(fire16,3000);
 

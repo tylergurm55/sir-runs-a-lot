@@ -137,3 +137,62 @@ const fire4 = () => {
 }
 setInterval(fire4,5200);
 
+const fire5 = () => {
+    const fireball = document.createElement('div');
+    fireball.classList.add('fireball');
+    const x = Math.random() * 1400;
+    fireball.style.left = `${x}px`;
+    document.querySelector('body').appendChild(fireball);
+    fireballs.two = {
+        x,
+        y: 0,
+        width: 50,
+        height: 50,
+    };
+  
+     const fireballInterval = setInterval(
+      () => {
+        if (fireballs.two.y === 700) {
+          fireball.remove();
+          clearInterval(fireballInterval);
+        } else {
+          fireballs.two.y += 1
+          fireball.style.top = `${fireballs.two.y}px`;
+        }
+    },
+      
+    );
+    
+}
+setInterval(fire5,5700);
+
+const fire6 = () => {
+    const fireball = document.createElement('div');
+    fireball.classList.add('fireball');
+    const x = Math.random() * 1400;
+    fireball.style.left = `${x}px`;
+    document.querySelector('body').appendChild(fireball);
+    fireballs.two = {
+        x,
+        y: 0,
+        width: 50,
+        height: 50,
+    };
+  
+     const fireballInterval = setInterval(
+      () => {
+        if (fireballs.two.y === 700) {
+          fireball.remove();
+          clearInterval(fireballInterval);
+        } else {
+          fireballs.two.y += 1
+          fireball.style.top = `${fireballs.two.y}px`;
+        }
+    },
+      
+    );
+    
+}
+setInterval(fire6,4200);
+
+
